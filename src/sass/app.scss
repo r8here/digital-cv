@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import 'node_modules/reset-css/sass/reset';
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+//@import "colors";
+.debug{ border: 1px solid red; }
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+    line-height: 1.5;
+}
+.app {
+    background: hsl(30,90%,98%);
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+img { width: 100%; height: auto; }
+.text-center { text-align: center}
+
+.user-info{
+    background-color: #3F51B5;
+    padding: 15px;
+    color: #fff
+}
+.user-thumb{
+    max-width: 180px;
+    margin: auto;
+    overflow: hidden;
+    /* border: 2px solid #fff */
+}
+.user-thumb img{ border-radius: 50%;}
+
+// .title{
+//     font-size: 1.62rem
+// }
+.details{
+    border: 1px solid;
+    padding: 30px 60px;
+}
+.date{ position: relative; margin-left: 25px; }
+.date:before {
+    font-family: FontAwesome;
+    content: "\f2c2";
+    font-size: 12px;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+}
+.details .about-comp{
+    margin: 0 25px 25px;
+}
+.role-tasks span{
+    color: #3F51B5;
+    font-weight: bold;
+}
+// h3.title{ font-size: 1.5rem}
