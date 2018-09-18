@@ -1,58 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import 'node_modules/reset-css/sass/reset';
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-//@import "colors";
+
 .debug{ border: 1px solid red; }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #fff;
     line-height: 1.5;
+    font-size: 16px;
 }
+
+$base-font-size: 1rem;
+h1{ font-size: $base-font-size*2 }
+h2{ font-size: $base-font-size+ .8rem }
+img { width: 100%; height: auto; }
+
+.text-center { text-align: center}
+strong { font-weight: 700!important; }
+
 .app {
     background: hsl(30,90%,98%);
-    max-width: 1024px;
+    max-width: 64rem;
     margin: auto;
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 18.75rem auto;
 }
-img { width: 100%; height: auto; }
-.text-center { text-align: center}
+
+.title {
+    font-size: $base-font-size + .5;
+    &:after{
+        content: '';
+        display: block;
+        height: 0;
+        border-bottom: 1px solid #6077f5;
+        margin: .5rem 0 1rem;
+    }
+}
 
 .user-info{
     background-color: #3F51B5;
-    padding: 15px;
-    color: #fff
+    padding: 1rem;
+    color: #fff;
+    .name{
+        border-bottom: 1px solid #6077f5;
+    }
+    .position{
+        font-size: $base-font-size+.4;
+    }
+    .user-thumb{
+        max-width: 12rem;
+        margin: auto;
+        overflow: hidden;
+        img{ border-radius: 50%;}
+    }
 }
-.user-thumb{
-    max-width: 180px;
-    margin: auto;
-    overflow: hidden;
-    /* border: 2px solid #fff */
-}
-.user-thumb img{ border-radius: 50%;}
 
-// .title{
-//     font-size: 1.62rem
-// }
-.details{
-    border: 1px solid;
-    padding: 30px 60px;
+.details {
+    padding: 1.87rem 3.75rem;
+    .about-comp{
+        margin: 0 1.8rem 1.8rem;
+    }
 }
-.date{ position: relative; margin-left: 25px; }
-.date:before {
-    font-family: FontAwesome;
-    content: "\f2c2";
-    font-size: 12px;
-    position: absolute;
-    left: -25px;
-    top: 5px;
+
+.date{
+    position: relative;
+    margin-left: 1.8rem;
+    &:before{
+        content: "\f2c2";
+        font-family: FontAwesome;
+        font-size: $base-font-size - .6rem;
+        position: absolute;
+        left: -1.8rem;
+        top: 0.3125rem;
+    }
 }
-.details .about-comp{
-    margin: 0 25px 25px;
+
+.role-tasks {
+    span{
+        color: #3F51B5;
+        @extend strong;
+    }
 }
-.role-tasks span{
-    color: #3F51B5;
-    font-weight: bold;
-}
-// h3.title{ font-size: 1.5rem}

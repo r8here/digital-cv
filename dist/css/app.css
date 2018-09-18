@@ -38,6 +38,7 @@ samp,
 small,
 strike,
 strong,
+.role-tasks span,
 sub,
 sup,
 tt,
@@ -5173,14 +5174,15 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
   line-height: 1.5;
+  font-size: 16px;
 }
 
-.app {
-  background: #fefaf5;
-  max-width: 1024px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 300px auto;
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
 }
 
 img {
@@ -5192,48 +5194,78 @@ img {
   text-align: center;
 }
 
+strong,
+.role-tasks span {
+  font-weight: 700 !important;
+}
+
+.app {
+  background: #fefaf5;
+  max-width: 64rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 18.75rem auto;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.title:after {
+  content: '';
+  display: block;
+  height: 0;
+  border-bottom: 1px solid #6077f5;
+  margin: .5rem 0 1rem;
+}
+
 .user-info {
   background-color: #3F51B5;
-  padding: 15px;
+  padding: 1rem;
   color: #fff;
 }
 
-.user-thumb {
-  max-width: 180px;
-  margin: auto;
-  overflow: hidden;
-  /* border: 2px solid #fff */
+.user-info .name {
+  border-bottom: 1px solid #6077f5;
 }
 
-.user-thumb img {
+.user-info .position {
+  font-size: 1.4rem;
+}
+
+.user-info .user-thumb {
+  max-width: 12rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.user-info .user-thumb img {
   border-radius: 50%;
 }
 
 .details {
-  border: 1px solid;
-  padding: 30px 60px;
+  padding: 1.87rem 3.75rem;
+}
+
+.details .about-comp {
+  margin: 0 1.8rem 1.8rem;
 }
 
 .date {
   position: relative;
-  margin-left: 25px;
+  margin-left: 1.8rem;
 }
 
 .date:before {
-  font-family: FontAwesome;
   content: "\F2C2";
-  font-size: 12px;
+  font-family: FontAwesome;
+  font-size: 0.4rem;
   position: absolute;
-  left: -25px;
-  top: 5px;
-}
-
-.details .about-comp {
-  margin: 0 25px 25px;
+  left: -1.8rem;
+  top: 0.3125rem;
 }
 
 .role-tasks span {
   color: #3F51B5;
-  font-weight: bold;
 }
 
