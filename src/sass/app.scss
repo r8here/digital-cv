@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 @import '~reset-css/sass/reset';
+@import 'print.scss';
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 .debug{ border: 1px solid red; }

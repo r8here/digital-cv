@@ -1,4 +1,25 @@
 @page {
   margin: 1cm;
-  size: A4 landscape;
+  size: A4;
+}
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+page[size="A4"][layout="portrait"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+body {-webkit-print-color-adjust: exact;}
+@media print {
+   .user-info{
+       width: 6cm;
+
+       page-break-before: always
+   }
+   .details{
+       width: 15cm;
+
+   }
 }
