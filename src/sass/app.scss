@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import 'node_modules/reset-css/sass/reset';
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "print.scss";
+
+@import '~reset-css/sass/reset';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 .debug{ border: 1px solid red; }
 
@@ -20,10 +20,15 @@ img { width: 100%; height: auto; }
 .text-center { text-align: center}
 strong { font-weight: 700!important; }
 
+.pseudo-block{
+    content: '';
+    display: block;
+}
+
 .app {
     background: hsl(30,90%,98%);
     max-width: 64rem;
-    margin: auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: 18.75rem auto;
 }
@@ -31,14 +36,15 @@ strong { font-weight: 700!important; }
 .title {
     font-size: $base-font-size + .5;
     &:after{
-        content: '';
-        display: block;
+        @extend .pseudo-block;
         height: 0;
         border-bottom: 1px solid #6077f5;
         margin: .5rem 0 1rem;
     }
 }
-
+.subtitle{
+    font-size: $base-font-size+.2
+}
 .user-info{
     background-color: #3F51B5;
     padding: 1rem;
@@ -59,25 +65,34 @@ strong { font-weight: 700!important; }
 
 .details {
     padding: 1.87rem 3.75rem;
-    .about-comp{
+    .description{
         margin: 0 1.8rem 1.8rem;
+        position: relative;
+        &:before{
+            @extend .pseudo-block;
+            height: 100%;
+            border-left : 2px dashed #3f51b5;
+            position: absolute;
+            left: -1rem;
+        }
     }
 }
 
 .date{
     position: relative;
     margin-left: 1.8rem;
+    font-size: $base-font-size+.2;
     &:before{
         content: "\f2c2";
         font-family: FontAwesome;
-        font-size: $base-font-size - .6rem;
+        font-size: $base-font-size - .2rem;
         position: absolute;
-        left: -1.8rem;
+        left: -1.5rem;
         top: 0.3125rem;
     }
 }
 
-.role-tasks {
+.role-tasks, .key-features {
     span{
         color: #3F51B5;
         @extend strong;
