@@ -39,6 +39,7 @@ small,
 strike,
 strong,
 .role-tasks span,
+.key-features span,
 sub,
 sup,
 tt,
@@ -5195,11 +5196,12 @@ img {
 }
 
 strong,
-.role-tasks span {
+.role-tasks span,
+.key-features span {
   font-weight: 700 !important;
 }
 
-.pseudo,
+.pseudo-block,
 .title:after,
 .details .description:before {
   content: '';
@@ -5209,7 +5211,7 @@ strong,
 .app {
   background: #fefaf5;
   max-width: 64rem;
-  margin: auto;
+  margin: 1rem auto;
   display: grid;
   grid-template-columns: 18.75rem auto;
 }
@@ -5222,6 +5224,10 @@ strong,
   height: 0;
   border-bottom: 1px solid #6077f5;
   margin: .5rem 0 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
 }
 
 .user-info {
@@ -5259,26 +5265,28 @@ strong,
 
 .details .description:before {
   height: 100%;
-  border-left: 1px solid #6077f5;
+  border-left: 2px dashed #3f51b5;
   position: absolute;
-  left: -1.8rem;
+  left: -1rem;
 }
 
 .date {
   position: relative;
   margin-left: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .date:before {
   content: "\F2C2";
   font-family: FontAwesome;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
   position: absolute;
-  left: -1.8rem;
+  left: -1.5rem;
   top: 0.3125rem;
 }
 
-.role-tasks span {
+.role-tasks span,
+.key-features span {
   color: #3F51B5;
 }
 
