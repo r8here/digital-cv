@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import 'node_modules/reset-css/sass/reset';
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+@import '~reset-css/sass/reset';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 .debug{ border: 1px solid red; }
 
@@ -19,6 +20,11 @@ img { width: 100%; height: auto; }
 .text-center { text-align: center}
 strong { font-weight: 700!important; }
 
+.pseudo{
+    content: '';
+    display: block;
+}
+
 .app {
     background: hsl(30,90%,98%);
     max-width: 64rem;
@@ -30,8 +36,7 @@ strong { font-weight: 700!important; }
 .title {
     font-size: $base-font-size + .5;
     &:after{
-        content: '';
-        display: block;
+        @extend .pseudo;
         height: 0;
         border-bottom: 1px solid #6077f5;
         margin: .5rem 0 1rem;
@@ -58,8 +63,16 @@ strong { font-weight: 700!important; }
 
 .details {
     padding: 1.87rem 3.75rem;
-    .about-comp{
+    .description{
         margin: 0 1.8rem 1.8rem;
+        position: relative;
+        &:before{
+            @extend .pseudo;
+            height: 100%;
+            border-left : 1px solid #6077f5;
+            position: absolute;
+            left: -1.8rem;
+        }
     }
 }
 

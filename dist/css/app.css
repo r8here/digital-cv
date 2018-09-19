@@ -5199,6 +5199,13 @@ strong,
   font-weight: 700 !important;
 }
 
+.pseudo,
+.title:after,
+.details .description:before {
+  content: '';
+  display: block;
+}
+
 .app {
   background: #fefaf5;
   max-width: 64rem;
@@ -5212,8 +5219,6 @@ strong,
 }
 
 .title:after {
-  content: '';
-  display: block;
   height: 0;
   border-bottom: 1px solid #6077f5;
   margin: .5rem 0 1rem;
@@ -5247,8 +5252,16 @@ strong,
   padding: 1.87rem 3.75rem;
 }
 
-.details .about-comp {
+.details .description {
   margin: 0 1.8rem 1.8rem;
+  position: relative;
+}
+
+.details .description:before {
+  height: 100%;
+  border-left: 1px solid #6077f5;
+  position: absolute;
+  left: -1.8rem;
 }
 
 .date {
