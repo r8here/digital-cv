@@ -14,14 +14,14 @@ body {
 }
 
 $base-font-size: 1rem;
-h1{ font-size: $base-font-size*2 }
-h2{ font-size: $base-font-size+ .8rem }
+h1 { font-size: $base-font-size*2 }
+h2 { font-size: $base-font-size+ .8rem }
 img { width: 100%; height: auto; }
 
 .text-center { text-align: center}
 strong { font-weight: 700!important; }
 
-.pseudo-block{
+.pseudo-block {
     content: '';
     display: block;
 }
@@ -36,40 +36,40 @@ strong { font-weight: 700!important; }
 
 .title {
     font-size: $base-font-size + .5;
-    &:after{
+    &:after {
         @extend .pseudo-block;
         height: 0;
         border-bottom: 1px solid #6077f5;
         margin: .5rem 0 1rem;
     }
 }
-.subtitle{
+.subtitle {
     font-size: $base-font-size+.2
 }
-.user-info{
+.user-info {
     background-color: #3F51B5;
     padding: 1rem;
     color: #fff;
-    .name{
+    .name {
         border-bottom: 1px solid #6077f5;
     }
-    .position{
+    .position {
         font-size: $base-font-size+.4;
     }
-    .user-thumb{
+    .user-thumb {
         max-width: 12rem;
         margin: auto;
         overflow: hidden;
-        img{ border-radius: 50%;}
+        img { border-radius: 50%; }
     }
 }
 
 .details {
     padding: 1.87rem 3.75rem;
-    .description{
+    .description {
         margin: 0 1.8rem 1.8rem;
         position: relative;
-        &:before{
+        &:before {
             @extend .pseudo-block;
             height: 100%;
             border-left : 2px dashed #3f51b5;
@@ -79,11 +79,11 @@ strong { font-weight: 700!important; }
     }
 }
 
-.date{
+.date {
     position: relative;
     margin-left: 1.8rem;
     font-size: $base-font-size+.2;
-    &:before{
+    &:before {
         content: "\f2c2";
         font-family: FontAwesome;
         font-size: $base-font-size - .2rem;
@@ -94,7 +94,7 @@ strong { font-weight: 700!important; }
 }
 
 .role-tasks, .key-features {
-    span{
+    span {
         color: #3F51B5;
         @extend strong;
     }
