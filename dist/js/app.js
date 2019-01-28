@@ -10495,8 +10495,8 @@ $(function () {});
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\wamp64\www\digital-cv.local\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! F:\wamp64\www\digital-cv.local\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! E:\xampp\htdocs\digital-cv\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! E:\xampp\htdocs\digital-cv\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
