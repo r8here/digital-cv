@@ -1,10 +1,12 @@
+import Vue from 'vue';
+
 try {
-    window.$ = window.jQuery = require('jQuery');
+    // window.$ = window.jQuery = require('jQuery');
     // require('bulma');
 }
 catch(e) {}
 
-
-$(function () {
-
+const app = new Vue({
+    el: '#app',
+    // render: h => h(TheApp)
 });
