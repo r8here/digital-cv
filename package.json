@@ -16,11 +16,9 @@
         "laravel-mix": "4.0.14",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.16.1",
-        "sass-loader": "^7.1.0",
-        "vue-template-compiler": "^2.5.22"
+        "sass-loader": "^7.1.0"
     },
     "dependencies": {
-        "reset-css": "^4.0.1",
-        "vue": "^2.5.22"
+        "reset-css": "^4.0.1"
     }
 }
