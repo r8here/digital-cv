@@ -3,7 +3,7 @@
         <div class="user-thumb">
             <img src="http://www.2-10.com/wp-content/uploads/2015/10/user1-300x300.jpg" alt="">
         </div>
-        <h1 class="name text-center">GAUTAM KUMAR</h1>
+        <h1 class="name text-center">{{ name }}</h1>
         <h3 class="text-center position">Front-end Developer</h3>
 
         <br>
@@ -54,6 +54,11 @@
 
 <script>
 export default {
-    name: 'LeftCol'
+    name: 'LeftCol',
+    data() {
+        return {
+            name: 'GAUTAM KUMAR'
+        }
+    }
 }
 </script>

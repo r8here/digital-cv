@@ -180,7 +180,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'LeftCol'
+  name: 'LeftCol',
+  data: function data() {
+    return {
+      name: 'GAUTAM KUMAR'
+    };
+  }
 });
 
 /***/ }),
@@ -788,158 +793,182 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "left-col user-info" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("h1", { staticClass: "name text-center" }, [_vm._v(_vm._s(_vm.name))]),
+    _vm._v(" "),
+    _c("h3", { staticClass: "text-center position" }, [
+      _vm._v("Front-end Developer")
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(4)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "left-col user-info" }, [
-      _c("div", { staticClass: "user-thumb" }, [
-        _c("img", {
-          attrs: {
-            src:
-              "http://www.2-10.com/wp-content/uploads/2015/10/user1-300x300.jpg",
-            alt: ""
-          }
-        })
+    return _c("div", { staticClass: "user-thumb" }, [
+      _c("img", {
+        attrs: {
+          src:
+            "http://www.2-10.com/wp-content/uploads/2015/10/user1-300x300.jpg",
+          alt: ""
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "about" }, [
+      _c("h3", { staticClass: "title" }, [
+        _c("i", { staticClass: "fa fa-fw fa-user" }),
+        _vm._v(" About Me")
       ]),
       _vm._v(" "),
-      _c("h1", { staticClass: "name text-center" }, [_vm._v("GAUTAM KUMAR")]),
-      _vm._v(" "),
-      _c("h3", { staticClass: "text-center position" }, [
-        _vm._v("Front-end Developer")
+      _c("p", { staticClass: "text" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quisquam. Nesciunt sequi rerum necessitatibus doloribus."
+        )
       ]),
       _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "about" }, [
-        _c("h3", { staticClass: "title" }, [
-          _c("i", { staticClass: "fa fa-fw fa-user" }),
-          _vm._v(" About Me")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "text" }, [
-          _vm._v(
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quisquam. Nesciunt sequi rerum necessitatibus doloribus."
-          )
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _c("strong", [_vm._v("Date of Birth")]),
-          _vm._v(": 15"),
-          _c("sup", [_vm._v("th")]),
-          _vm._v(" Sep, 1990")
-        ]),
-        _vm._v("\n        Place:\n    ")
+      _c("p", [
+        _c("strong", [_vm._v("Date of Birth")]),
+        _vm._v(": 15"),
+        _c("sup", [_vm._v("th")]),
+        _vm._v(" Sep, 1990")
+      ]),
+      _vm._v("\n        Place:\n    ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "skills" }, [
+      _c("h3", { staticClass: "title" }, [
+        _c("i", { staticClass: "fa fa-fw fa-user" }),
+        _vm._v(" Skills")
       ]),
       _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "skills" }, [
-        _c("h3", { staticClass: "title" }, [
-          _c("i", { staticClass: "fa fa-fw fa-user" }),
-          _vm._v(" Skills")
+      _c("ul", [
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
+          _vm._v(" HTML5")
         ]),
         _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-            _vm._v(" HTML5")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-            _vm._v(" CSS3")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-            _vm._v(" LESS/Sass/SCSS")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-            _vm._v(" JavaScript/jQuery")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-            _vm._v(" Vue.js")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-            _vm._v(" Git")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-            _vm._v(" WordPress ")
-          ])
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
+          _vm._v(" CSS3")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
+          _vm._v(" LESS/Sass/SCSS")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
+          _vm._v(" JavaScript/jQuery")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
+          _vm._v(" Vue.js")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
+          _vm._v(" Git")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
+          _vm._v(" WordPress ")
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "contact" }, [
+      _c("h3", { staticClass: "title" }, [
+        _c("i", { staticClass: "fa fa-fw fa-user" }),
+        _vm._v(" Contact Me")
       ]),
       _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "contact" }, [
-        _c("h3", { staticClass: "title" }, [
-          _c("i", { staticClass: "fa fa-fw fa-user" }),
-          _vm._v(" Contact Me")
+      _c("ul", [
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-phone" }),
+          _vm._v(" +91 78654321")
         ]),
         _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-phone" }),
-            _vm._v(" +91 78654321")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-envelope" }),
-            _vm._v(" johndoe@example.com")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-github" }),
-            _vm._v(" //github.com/example")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-twitter" }),
-            _vm._v(" +91 1234 456 780")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-map-marker" }),
-            _vm._v(" F32, Somewhere on Earth, Earth")
-          ])
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-envelope" }),
+          _vm._v(" johndoe@example.com")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-github" }),
+          _vm._v(" //github.com/example")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-twitter" }),
+          _vm._v(" +91 1234 456 780")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-map-marker" }),
+          _vm._v(" F32, Somewhere on Earth, Earth")
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "hobbies" }, [
+      _c("h3", { staticClass: "title" }, [
+        _c("i", { staticClass: "fa fa-fw fa-user" }),
+        _vm._v(" Hobbies")
       ]),
       _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "hobbies" }, [
-        _c("h3", { staticClass: "title" }, [
-          _c("i", { staticClass: "fa fa-fw fa-user" }),
-          _vm._v(" Hobbies")
+      _c("ul", [
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
+          _vm._v(" Keen Gardener")
         ]),
         _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
-            _vm._v(" Keen Gardener")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
-            _vm._v(" Reading Books")
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
-            _vm._v(" Watching Sci-fi Movies")
-          ])
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
+          _vm._v(" Reading Books")
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
+          _vm._v(" Watching Sci-fi Movies")
         ])
       ])
     ])
