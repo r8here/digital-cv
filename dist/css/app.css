@@ -5873,7 +5873,7 @@ strong,
   display: block;
 }
 
-#app {
+.app-container {
   background: #fefaf5;
   max-width: 64rem;
   margin: 1rem auto;
