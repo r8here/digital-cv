@@ -1,6 +1,6 @@
 <template>
     <div class="right-col details">
-        <h2><i class="fa fa-briefcase"></i> Employment</h2>
+        <h2><i class="fas fa-briefcase"></i> Employment</h2>
         <br>
         <div class="employment">
             <div class="date"> 2014-2015</div>
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
         <br>
         <div class="education">
             <div class="date"> 2014-2015</div>
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <h2><i class="fa fa-tasks"></i> Projects</h2>
+        <h2><i class="fas fa-tasks"></i> Projects</h2>
         <br>
         <div class="project">
             <div class="date"> 2014-2015</div>
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <h2><i class="fa fa-github"></i> Open Source Projects</h2>
+        <h2><i class="fab fa-github-alt"></i> Open Source Projects</h2>
         <br>
         <div class="projects">
             <div class="date"> 2014-2015</div>
