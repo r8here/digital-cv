@@ -18,13 +18,13 @@
         <div class="skills">
             <h3 class="title"><i class="fa fa-fw fa-user"></i> Skills</h3>
             <ul>
-                <li><i class="fa fa-fw fa-dot-circle-o"></i> HTML5</li>
-                <li><i class="fa fa-fw fa-dot-circle-o"></i> CSS3</li>
-                <li><i class="fa fa-fw fa-dot-circle-o"></i> LESS/Sass/SCSS</li>
-                <li><i class="fa fa-fw fa-dot-circle-o"></i> JavaScript/jQuery</li>
-                <li><i class="fa fa-fw fa-dot-circle-o"></i> Vue.js</li>
-                <li><i class="fa fa-fw fa-dot-circle-o"></i> Git</li>
-                <li><i class="fa fa-fw fa-dot-circle-o"></i> WordPress </li>
+                <li><i class="far fa-dot-circle"></i> HTML5</li>
+                <li><i class="far fa-dot-circle"></i> CSS3</li>
+                <li><i class="far fa-dot-circle"></i> LESS/Sass/SCSS</li>
+                <li><i class="far fa-dot-circle"></i> JavaScript/jQuery</li>
+                <li><i class="far fa-dot-circle"></i> Vue.js</li>
+                <li><i class="far fa-dot-circle"></i> Git</li>
+                <li><i class="far fa-dot-circle"></i> WordPress </li>
             </ul>
         </div>
 
@@ -34,9 +34,9 @@
             <ul>
                 <li><i class="fa fa-fw fa-phone"></i> +91 78654321</li>
                 <li><i class="fa fa-fw fa-envelope"></i> johndoe@example.com</li>
-                <li><i class="fa fa-fw fa-github"></i> //github.com/example</li>
-                <li><i class="fa fa-fw fa-twitter"></i> +91 1234 456 780</li>
-                <li><i class="fa fa-fw fa-map-marker"></i> F32, Somewhere on Earth, Earth</li>
+                <li><i class="fab fa-fw fa-github"></i> //github.com/example</li>
+                <li><i class="fab fa-fw fa-twitter"></i> +91 1234 456 780</li>
+                <li><i class="fas fa-map-marker-alt"></i> F32, Somewhere on Earth, Earth</li>
             </ul>
         </div>
 

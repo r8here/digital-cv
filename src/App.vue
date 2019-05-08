@@ -1,13 +1,13 @@
 <template>
-    <div class="app-container">
+    <div id='app' class="app-container">
         <left-col></left-col>
         <right-col></right-col>
     </div>
 </template>
 
 <script>
-import LeftCol from './LeftCol'
-import RightCol from './RightCol'
+import LeftCol from './components/LeftCol'
+import RightCol from './components/RightCol'
 
 export default {
     name: 'App',
@@ -17,3 +17,7 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+@import './assets/app.scss'
+</style>
